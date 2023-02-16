@@ -43,7 +43,7 @@ pipeline {
                     try {
 
                         sh """  
-                            which pip3
+                            export PATH="$HOME/.local/bin:$PATH"
                             pip3 install .
                             pip3 show tenable-jira-cloud
                             tenable-jira config.yaml
