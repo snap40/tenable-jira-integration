@@ -21,7 +21,7 @@ pipeline {
     // env.TENABLE_JIRA_API_TOKEN = ''
 
     stages {
-        stage('Install plugin') {
+        stage('Initialise Parameters') {
             steps {
                 script {
                    env.TENABLE_API_ACCESS_KEY = sh(script: "aws ssm get-parameter --with-decryption --name '/tenable/tenable-api-access-key' --query 'Parameter.Value' --output text", returnStdout: true).trim()
@@ -31,9 +31,7 @@ pipeline {
                     println env.TENABLE_API_ACCESS_KEY
                     println env.TENABLE_API_SECRET_KEY
                     println env.TENABLE_JIRA_API_TOKEN
-                    println env.WORKSPACE
-                    sh "pip3 install ." 
-
+                    println env.WORKSPACE 
                 }
             }
         }
@@ -43,8 +41,10 @@ pipeline {
                 script {
                     try {
 
-                        sh "tenable-jira config.yaml"
-
+                        sh """
+                        sh "pip3 install ."
+                        tenable-jira config.yaml
+                        """
                        
                     }
                     catch(error) {
