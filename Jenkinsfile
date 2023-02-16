@@ -16,21 +16,25 @@ pipeline {
     agent {
         label 'linux && docker' 
     }
-    // env.TENABLE_API_ACCESS_KEY = ''
-    // env.TENABLE_API_SECRET_KEY = ''
-    // env.TENABLE_JIRA_API_TOKEN = ''
 
     stages {
         stage('Initialise Parameters') {
             steps {
                 script {
-                   env.TENABLE_API_ACCESS_KEY = sh(script: "aws ssm get-parameter --with-decryption --name '/tenable/tenable-api-access-key' --query 'Parameter.Value' --output text", returnStdout: true).trim()
-                   env.TENABLE_API_SECRET_KEY = sh(script: "aws ssm get-parameter --with-decryption --name '/tenable/tenable-api-secret-key' --query 'Parameter.Value' --output text", returnStdout: true).trim()
-                   env.TENABLE_JIRA_API_TOKEN = sh(script: "aws ssm get-parameter --with-decryption --name '/tenable/tenable-jira-api-token' --query 'Parameter.Value' --output text", returnStdout: true).trim()    
-                           
-                    println env.TENABLE_API_ACCESS_KEY
-                    println env.TENABLE_API_SECRET_KEY
-                    println env.TENABLE_JIRA_API_TOKEN
+                   def tenable-api-access-key = sh(script: "aws ssm get-parameter --with-decryption --name '/tenable/tenable-api-access-key' --query 'Parameter.Value' --output text", returnStdout: true).trim()
+                   def tenable-api-secret-key = sh(script: "aws ssm get-parameter --with-decryption --name '/tenable/tenable-api-secret-key' --query 'Parameter.Value' --output text", returnStdout: true).trim()
+                   def tenable-jira-api-token = sh(script: "aws ssm get-parameter --with-decryption --name '/tenable/tenable-jira-api-token' --query 'Parameter.Value' --output text", returnStdout: true).trim()    
+
+                    println tenable-api-access-key
+                    println tenable-api-secret-key
+                    println tenable-jira-api-token
+                    
+                    sh "sed -i 's/PLACEHOLDER-TENABLE-API-ACCESS-KEY/${tenable-api-access-key}/g' config.yaml"
+                    sh "sed -i 's/PLACEHOLDER-TENABLE-API-SECRET-KEY/${tenable-api-secret-key}/g' config.yaml"
+                    sh "sed -i 's/PLACEHOLDER-TENABLE-JIRA-API-TOKEN/${tenable-jira-api-token}/g' config.yaml"
+
+                            
+                   
                 }
             }
         }

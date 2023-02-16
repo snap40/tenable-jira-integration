@@ -1,7 +1,7 @@
 tenable:
   # Tenable.io or API Key - Tenable DevOps User
-  access_key: ${env.TENABLE_API_ACCESS_KEY}
-  secret_key: ${env.TENABLE_API_SECRET_KEY}
+  access_key: PLACEHOLDER-TENABLE-API-ACCESS-KEY
+  secret_key: PLACEHOLDER-TENABLE-API-SECRET-KEY
   severity_prioritization:
     critical: 1
     high: 2
@@ -22,7 +22,7 @@ tenable:
     - aws_region
 
 jira:
-  api_token: ${env.TENABLE_JIRA_API_TOKEN}
+  api_token: PLACEHOLDER-TENABLE-JIRA-API-TOKEN
   api_username: tenable@currenthealth.com
   address: snap40.atlassian.net
 
