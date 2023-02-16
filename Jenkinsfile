@@ -16,6 +16,9 @@ pipeline {
     agent {
         label 'linux && docker' 
     }
+    env.TENABLE_API_ACCESS_KEY = ''
+    env.TENABLE_API_SECRET_KEY = ''
+    env.TENABLE_JIRA_API_TOKEN = ''
 
     stages {
         stage('Install plugin') {
@@ -29,26 +32,26 @@ pipeline {
                     println env.TENABLE_API_SECRET_KEY
                     println env.TENABLE_JIRA_API_TOKEN
                     println env.WORKSPACE
-                    // sh "pip3 install ." 
+                    sh "pip3 install ." 
 
                 }
             }
         }
 
-        // stage('Get Tenable Vulnerabilities') {
-        //     steps {
-        //         script {
-        //             try {
+        stage('Get Tenable Vulnerabilities') {
+            steps {
+                script {
+                    try {
 
-        //                 sh "tenable-jira config.yaml"
+                        sh "tenable-jira config.yaml"
 
                        
-        //             }
-        //             catch(error) {
-        //                 throw error
-        //             }
-        //         }
-        //     }
-        // }
+                    }
+                    catch(error) {
+                        throw error
+                    }
+                }
+            }
+        }
     }
 }
