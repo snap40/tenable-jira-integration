@@ -33,7 +33,7 @@ pipeline {
                         sh """  
                             export PATH="$HOME/.local/bin:$PATH"
                             pip3 install .
-                            tenable-jiraa config.yaml
+                            tenable-jira config.yaml
                         """
                 }
             }
