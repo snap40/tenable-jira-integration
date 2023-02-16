@@ -43,7 +43,8 @@ pipeline {
                     try {
 
                         sh """  
-                            pip3 install . --user
+                            which pip3
+                            pip3 install .
                             tenable-jira config.yaml
                         """
                        
