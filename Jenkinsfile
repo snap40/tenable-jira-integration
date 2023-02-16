@@ -45,6 +45,7 @@ pipeline {
                         sh """  
                             which pip3
                             pip3 install .
+                            pip3 show tenable-jira-cloud
                             tenable-jira config.yaml
                         """
                        
