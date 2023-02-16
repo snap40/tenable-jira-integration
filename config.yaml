@@ -1,7 +1,7 @@
 tenable:
   # Tenable.io or API Key - Tenable DevOps User
-  access_key: 8c0da9037224a80e3dcd8205cb7093d05f58e30542036aabc014455c80b469e4
-  secret_key: 507245bf82699f13af8a710ef8c179ccda769af5f5b90af6c69be629ae7f65c8
+  access_key: PLACEHOLDER-TENABLE-API-ACCESS-KEY
+  secret_key: PLACEHOLDER-TENABLE-API-SECRET-KEY
   severity_prioritization:
     critical: 1
     high: 2
@@ -22,7 +22,7 @@ tenable:
     - aws_region
 
 jira:
-  api_token: ATATT3xFfGF0zlLn1oivP0TS0roKO-vdWi1F_11n-WtXwYjHYmvIFuxFH8C8E4C7-oHS1mTpIAO8uwr9vkHCeR9oT5mgplEN7rWbnvxIR_9vAa4cMMmjJe7bFMH6cTGhm-2PIzamvG7lMdfzg9aN2x5TURIimhYoCl9AmFGf4XQV6E3LZG_0R4s=7FDA9FD0
+  api_token: PLACEHOLDER-TENABLE-JIRA-API-TOKEN
   api_username: tenable@currenthealth.com
   address: snap40.atlassian.net
 
@@ -39,7 +39,6 @@ log:
   level: info
   # If you would like the log output to goto a file instead of standard output,
   # then specify the filename here:
-  # filename: ./tenable-jira.log
 
 screen:
   jira_ids:
