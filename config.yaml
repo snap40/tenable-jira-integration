@@ -36,7 +36,7 @@ log:
   # What is the logging level desired?  Available levels are:
   #   debug, info, warn, error
   # The default level if unspecified is "warn"
-  level: warn
+  level: debug
   # If you would like the log output to goto a file instead of standard output,
   # then specify the filename here:
   filename: ./tenable-jira.log
