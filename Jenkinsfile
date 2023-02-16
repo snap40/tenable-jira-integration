@@ -41,7 +41,7 @@ pipeline {
                     try {
 
                         sh """  
-                        pip3 install .
+                        pip install .
                         tenable-jira-cloud config.yaml
                         """
                        
