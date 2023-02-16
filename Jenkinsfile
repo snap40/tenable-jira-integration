@@ -31,7 +31,6 @@ pipeline {
                     println env.TENABLE_API_ACCESS_KEY
                     println env.TENABLE_API_SECRET_KEY
                     println env.TENABLE_JIRA_API_TOKEN
-                    println env.WORKSPACE 
                 }
             }
         }
@@ -41,8 +40,8 @@ pipeline {
                 script {
                     try {
 
-                        sh """
-                        sh "pip3 install ."
+                        sh """  
+                        pip3 install .
                         tenable-jira config.yaml
                         """
                        
