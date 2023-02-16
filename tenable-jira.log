@@ -1,2 +1,220 @@
-2023-02-16 13:13:15,320 restfly.errors.UnauthorizedError ERROR [401: GET] https://cloud.tenable.com/session body=b'{"statusCode":401,"error":"Unauthorized","message":"Invalid credentials."}'
-2023-02-16 14:55:16,028 restfly.errors.UnauthorizedError ERROR [401: GET] https://cloud.tenable.com/session body=b'{"statusCode":401,"error":"Unauthorized","message":"Invalid credentials."}'
+2023-02-16 15:27:55,631 root INFO Tenable2JiraCloud Version 1.2.3
+2023-02-16 15:27:55,631 root INFO Using configuration file config.yaml
+2023-02-16 15:27:55,637 root INFO Running on Python3.10.9Darwin/x86_64
+2023-02-16 15:27:55,842 restfly.errors.UnauthorizedError ERROR [401: GET] https://cloud.tenable.com/session body=b'This scanner, agent, or API key token does not appear to be related to any active containers on any sites and has been blacklisted.'
+2023-02-16 15:28:49,454 root INFO Tenable2JiraCloud Version 1.2.3
+2023-02-16 15:28:49,454 root INFO Using configuration file config.yaml
+2023-02-16 15:28:49,460 root INFO Running on Python3.10.9Darwin/x86_64
+2023-02-16 15:28:50,582 tenable_jira.jira.Jira INFO Tenable Platform is customfield_10289 (existing)
+2023-02-16 15:28:50,582 tenable_jira.jira.Jira INFO CVEs is customfield_10290 (existing)
+2023-02-16 15:28:50,582 tenable_jira.jira.Jira INFO CVSSv2 Base Score is customfield_10291 (existing)
+2023-02-16 15:28:50,582 tenable_jira.jira.Jira INFO CVSSv2 Temporal Score is customfield_10292 (existing)
+2023-02-16 15:28:50,582 tenable_jira.jira.Jira INFO CVSSv3 Base Score is customfield_10293 (existing)
+2023-02-16 15:28:50,582 tenable_jira.jira.Jira INFO CVSSv3 Temporal Score is customfield_10294 (existing)
+2023-02-16 15:28:50,582 tenable_jira.jira.Jira INFO Patch Publication Date is customfield_10295 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Tenable Plugin ID is customfield_10296 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Tenable Plugin Family is customfield_10297 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Tenable Plugin Name is customfield_10298 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Vulnerability Severity is customfield_10299 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Finding Severity is customfield_10300 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Tenable Asset UUID is customfield_10301 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Tenable Asset Tags is customfield_10302 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Device MAC Addresses is customfield_10303 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Device IPv4 Addresses is customfield_10304 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Device IPv6 Addresses is customfield_10305 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Device Hostname is customfield_10306 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Device NetBIOS Name is customfield_10307 (existing)
+2023-02-16 15:28:50,583 tenable_jira.jira.Jira INFO Device DNS Name is customfield_10308 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Device Network ID is customfield_10309 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Vulnerability First Seen is customfield_10310 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Vulnerability Last Seen is customfield_10311 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Vulnerability Last Fixed is customfield_10312 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Vulnerability State is customfield_10313 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Vulnerability Port is customfield_10314 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Vulnerability Protocol is customfield_10315 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Vulnerability Repository ID is customfield_10316 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Vulnerability Repository Name is customfield_10317 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO Tenable VPR Score is customfield_10318 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO AWS Owner ID is customfield_10323 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO AWS VPC ID is customfield_10326 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO AWS Region is customfield_10325 (existing)
+2023-02-16 15:28:50,584 tenable_jira.jira.Jira INFO AWS Instance ID is customfield_10322 (existing)
+2023-02-16 15:28:50,585 tenable_jira.jira.Jira INFO AWS Name is customfield_10320 (existing)
+2023-02-16 15:28:51,068 tenable_jira.transform.Tio2Jira INFO Using JIRA Screens [10672, 10673]
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO CVEs already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Tenable VPR Score already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO CVSSv2 Base Score already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO CVSSv2 Temporal Score already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO CVSSv3 Base Score already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO CVSSv3 Temporal Score already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Tenable Plugin ID already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Tenable Plugin Family already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Tenable Plugin Name already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Vulnerability Severity already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Vulnerability First Seen already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Vulnerability Last Seen already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Vulnerability Last Fixed already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Vulnerability State already exists in 10672:10778
+2023-02-16 15:28:51,527 tenable_jira.transform.Tio2Jira INFO Vulnerability Port already exists in 10672:10778
+2023-02-16 15:28:51,528 tenable_jira.transform.Tio2Jira INFO Vulnerability Protocol already exists in 10672:10778
+2023-02-16 15:28:51,528 tenable_jira.transform.Tio2Jira INFO Patch Publication Date already exists in 10672:10778
+2023-02-16 15:28:51,528 tenable_jira.transform.Tio2Jira INFO Finding Severity already exists in 10672:10778
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Tenable Asset UUID already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Tenable Asset Tags already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Tenable Platform already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Device Hostname already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Device NetBIOS Name already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Device DNS Name already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Device IPv4 Addresses already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Device IPv6 Addresses already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Device MAC Addresses already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Device Network ID already exists in 10672:10779
+2023-02-16 15:28:51,809 tenable_jira.transform.Tio2Jira INFO Vulnerability Repository ID already exists in 10672:10779
+2023-02-16 15:28:51,810 tenable_jira.transform.Tio2Jira INFO Vulnerability Repository Name already exists in 10672:10779
+2023-02-16 15:28:51,810 tenable_jira.transform.Tio2Jira INFO AWS Owner ID already exists in 10672:10779
+2023-02-16 15:28:51,810 tenable_jira.transform.Tio2Jira INFO AWS VPC ID already exists in 10672:10779
+2023-02-16 15:28:51,810 tenable_jira.transform.Tio2Jira INFO AWS Region already exists in 10672:10779
+2023-02-16 15:28:51,810 tenable_jira.transform.Tio2Jira INFO AWS Instance ID already exists in 10672:10779
+2023-02-16 15:28:51,810 tenable_jira.transform.Tio2Jira INFO AWS Name already exists in 10672:10779
+2023-02-16 15:28:52,282 tenable_jira.transform.Tio2Jira INFO CVEs already exists in 10673:10780
+2023-02-16 15:28:52,282 tenable_jira.transform.Tio2Jira INFO Tenable VPR Score already exists in 10673:10780
+2023-02-16 15:28:52,282 tenable_jira.transform.Tio2Jira INFO CVSSv2 Base Score already exists in 10673:10780
+2023-02-16 15:28:52,282 tenable_jira.transform.Tio2Jira INFO CVSSv2 Temporal Score already exists in 10673:10780
+2023-02-16 15:28:52,282 tenable_jira.transform.Tio2Jira INFO CVSSv3 Base Score already exists in 10673:10780
+2023-02-16 15:28:52,282 tenable_jira.transform.Tio2Jira INFO CVSSv3 Temporal Score already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Tenable Plugin ID already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Tenable Plugin Family already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Tenable Plugin Name already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Vulnerability Severity already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Vulnerability First Seen already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Vulnerability Last Seen already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Vulnerability Last Fixed already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Vulnerability State already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Vulnerability Port already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Vulnerability Protocol already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Patch Publication Date already exists in 10673:10780
+2023-02-16 15:28:52,283 tenable_jira.transform.Tio2Jira INFO Finding Severity already exists in 10673:10780
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Tenable Asset UUID already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Tenable Asset Tags already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Tenable Platform already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Device Hostname already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Device NetBIOS Name already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Device DNS Name already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Device IPv4 Addresses already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Device IPv6 Addresses already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Device MAC Addresses already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Device Network ID already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Vulnerability Repository ID already exists in 10673:10781
+2023-02-16 15:28:52,548 tenable_jira.transform.Tio2Jira INFO Vulnerability Repository Name already exists in 10673:10781
+2023-02-16 15:28:52,549 tenable_jira.transform.Tio2Jira INFO AWS Owner ID already exists in 10673:10781
+2023-02-16 15:28:52,549 tenable_jira.transform.Tio2Jira INFO AWS VPC ID already exists in 10673:10781
+2023-02-16 15:28:52,549 tenable_jira.transform.Tio2Jira INFO AWS Region already exists in 10673:10781
+2023-02-16 15:28:52,549 tenable_jira.transform.Tio2Jira INFO AWS Instance ID already exists in 10673:10781
+2023-02-16 15:28:52,549 tenable_jira.transform.Tio2Jira INFO AWS Name already exists in 10673:10781
+2023-02-16 15:28:52,549 root INFO Initiating ingest with observed_since=1673913600
+2023-02-16 15:29:03,494 tenable_jira.transform.Tio2Jira INFO Updating and creating issues marked as Open
+2023-02-16 15:29:10,241 tenable_jira.jira.Jira INFO UPDATED VULN-2 [169726] Ubuntu 20.04 LTS / 22.04 LTS : Linux kernel vulnerabilities (USN-5792-2)
+2023-02-16 15:29:11,144 tenable_jira.jira.Jira INFO UPDATED VULN-3 [nessus-scanner-prod-use1 10.21.8.123/0/TCP] [169726] Ubuntu 20.04 LTS / 22.04 LTS : Linux kernel vulnerabilities (USN-5792-2)
+2023-02-16 15:29:11,721 tenable_jira.transform.Tio2Jira INFO Autoclosing 111351 on fa249d06-9a60-4a5a-9c8d-2bff81ae2326 as it's an accepted issue
+2023-02-16 15:29:12,591 tenable_jira.transform.Tio2Jira INFO Autoclosing 45411 on 62e66973-a62a-4794-870e-cc79b53859b4 as it's an accepted issue
+2023-02-16 15:29:13,961 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:15,114 tenable_jira.jira.Jira INFO UPDATED VULN-26 [ax-prod-nomad-server-1.use1.prod.chealth.io 10.21.9.96/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:16,343 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:17,276 tenable_jira.jira.Jira INFO UPDATED VULN-27 [ax-prod-nomad-server-0.use1.prod.chealth.io 10.21.8.109/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:18,439 tenable_jira.jira.Jira INFO UPDATED VULN-9 [57582] SSL Self-Signed Certificate
+2023-02-16 15:29:19,346 tenable_jira.jira.Jira INFO UPDATED VULN-40 [access-vpn-2 10.20.0.86/443/TCP] [57582] SSL Self-Signed Certificate
+2023-02-16 15:29:20,513 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:21,549 tenable_jira.jira.Jira INFO UPDATED VULN-14 [ax-prod-nomad-server-0.use1.prod.chealth.io 10.21.8.109/8300/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:22,716 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:23,731 tenable_jira.jira.Jira INFO UPDATED VULN-13 [ax-prod-nomad-server-1.use1.prod.chealth.io 10.21.9.96/8300/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:24,807 tenable_jira.jira.Jira INFO UPDATED VULN-7 [170012] Ubuntu 20.04 LTS / 22.04 LTS / 22.10 : Linux kernel vulnerabilities (USN-5803-1)
+2023-02-16 15:29:25,915 tenable_jira.jira.Jira INFO UPDATED VULN-8 [prod-euw1-nessus-scanner 10.0.4.99/0/TCP] [170012] Ubuntu 20.04 LTS / 22.04 LTS / 22.10 : Linux kernel vulnerabilities (USN-5803-1)
+2023-02-16 15:29:26,484 tenable_jira.transform.Tio2Jira INFO Autoclosing 45411 on f6d10c07-c508-4639-a98a-46a2ace62785 as it's an accepted issue
+2023-02-16 15:29:27,824 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:28,776 tenable_jira.jira.Jira INFO UPDATED VULN-16 [ax-prod-nomad-node-7.use1.prod.chealth.io 10.21.10.43/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:29,935 tenable_jira.jira.Jira INFO UPDATED VULN-7 [170012] Ubuntu 20.04 LTS / 22.04 LTS / 22.10 : Linux kernel vulnerabilities (USN-5803-1)
+2023-02-16 15:29:30,810 tenable_jira.jira.Jira INFO UPDATED VULN-15 [nessus-scanner-prod-use1 10.21.8.123/0/TCP] [170012] Ubuntu 20.04 LTS / 22.04 LTS / 22.10 : Linux kernel vulnerabilities (USN-5803-1)
+2023-02-16 15:29:31,220 tenable_jira.transform.Tio2Jira INFO Autoclosing 104743 on 2432d098-381e-4bb2-b43f-b53519aed3ba as it's an accepted issue
+2023-02-16 15:29:32,613 tenable_jira.jira.Jira INFO UPDATED VULN-7 [170012] Ubuntu 20.04 LTS / 22.04 LTS / 22.10 : Linux kernel vulnerabilities (USN-5803-1)
+2023-02-16 15:29:33,576 tenable_jira.jira.Jira INFO UPDATED VULN-23 [dev-euw1-nessus-scanner 10.18.8.243/0/TCP] [170012] Ubuntu 20.04 LTS / 22.04 LTS / 22.10 : Linux kernel vulnerabilities (USN-5803-1)
+2023-02-16 15:29:34,621 tenable_jira.jira.Jira INFO UPDATED VULN-7 [170012] Ubuntu 20.04 LTS / 22.04 LTS / 22.10 : Linux kernel vulnerabilities (USN-5803-1)
+2023-02-16 15:29:35,665 tenable_jira.jira.Jira INFO UPDATED VULN-45 [ops-nessus-scanner 10.20.0.52/0/TCP] [170012] Ubuntu 20.04 LTS / 22.04 LTS / 22.10 : Linux kernel vulnerabilities (USN-5803-1)
+2023-02-16 15:29:36,233 tenable_jira.transform.Tio2Jira INFO Autoclosing 111351 on 3ed55044-1925-4897-9657-071d6f8ec3a2 as it's an accepted issue
+2023-02-16 15:29:37,741 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:38,854 tenable_jira.jira.Jira INFO UPDATED VULN-43 [ax-prod-nomad-server-4.use1.prod.chealth.io 10.21.13.145/8300/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:40,042 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:40,914 tenable_jira.jira.Jira INFO UPDATED VULN-44 [ax-prod-nomad-node-9.use1.prod.chealth.io 10.21.13.198/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:42,083 tenable_jira.jira.Jira INFO UPDATED VULN-2 [169726] Ubuntu 20.04 LTS / 22.04 LTS : Linux kernel vulnerabilities (USN-5792-2)
+2023-02-16 15:29:42,967 tenable_jira.jira.Jira INFO UPDATED VULN-42 [dev-phi-nessus-scanner 10.15.8.42/0/TCP] [169726] Ubuntu 20.04 LTS / 22.04 LTS : Linux kernel vulnerabilities (USN-5792-2)
+2023-02-16 15:29:44,155 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:45,108 tenable_jira.jira.Jira INFO UPDATED VULN-19 [ax-prod-nomad-server-2.use1.prod.chealth.io 10.21.10.169/8200/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:46,103 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:47,145 tenable_jira.jira.Jira INFO UPDATED VULN-12 [ax-prod-nomad-node-5.use1.prod.chealth.io 10.21.8.211/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:47,610 tenable_jira.transform.Tio2Jira INFO Autoclosing 157288 on 2432d098-381e-4bb2-b43f-b53519aed3ba as it's an accepted issue
+2023-02-16 15:29:49,180 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:50,187 tenable_jira.jira.Jira INFO UPDATED VULN-6 [ax-prod-nomad-server-4.use1.prod.chealth.io 10.21.13.145/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:51,279 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:52,240 tenable_jira.jira.Jira INFO UPDATED VULN-22 [ax-prod-nomad-node-0.use1.prod.chealth.io 10.21.8.42/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:53,253 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:54,088 tenable_jira.jira.Jira INFO UPDATED VULN-49 [dev-phi-nessus-scanner 10.15.8.42/8834/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:29:54,586 tenable_jira.transform.Tio2Jira INFO Autoclosing 111351 on 9d0abaf7-5439-47b6-8662-790c5bed5856 as it's an accepted issue
+2023-02-16 15:29:55,386 tenable_jira.transform.Tio2Jira INFO Autoclosing 51192 on 2432d098-381e-4bb2-b43f-b53519aed3ba as it's an accepted issue
+2023-02-16 15:29:57,084 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:58,041 tenable_jira.jira.Jira INFO UPDATED VULN-46 [ax-prod-nomad-node-1.use1.prod.chealth.io 10.21.9.124/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:29:59,135 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:00,147 tenable_jira.jira.Jira INFO UPDATED VULN-35 [ax-prod-nomad-node-6.use1.prod.chealth.io 10.21.9.12/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:01,323 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:02,312 tenable_jira.jira.Jira INFO UPDATED VULN-36 [nessus-scanner-datascience-euw1 10.16.8.82/8834/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:03,403 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:04,553 tenable_jira.jira.Jira INFO UPDATED VULN-52 [nessus-scanner-0.use1.prod.chealth.io 10.21.8.199/8834/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:05,750 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:06,690 tenable_jira.jira.Jira INFO UPDATED VULN-53 [ax-prod-nomad-server-2.use1.prod.chealth.io 10.21.10.169/8300/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:07,876 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:08,816 tenable_jira.jira.Jira INFO UPDATED VULN-51 [ax-prod-nomad-server-3.use1.prod.chealth.io 10.21.11.15/8200/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:09,932 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:10,890 tenable_jira.jira.Jira INFO UPDATED VULN-54 [access-vpn-1 10.20.0.42/443/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:12,020 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:13,014 tenable_jira.jira.Jira INFO UPDATED VULN-41 [ax-prod-nomad-server-3.use1.prod.chealth.io 10.21.11.15/8300/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:14,229 tenable_jira.jira.Jira INFO UPDATED VULN-9 [57582] SSL Self-Signed Certificate
+2023-02-16 15:30:15,303 tenable_jira.jira.Jira INFO UPDATED VULN-32 [access-vpn-3 10.20.0.181/443/TCP] [57582] SSL Self-Signed Certificate
+2023-02-16 15:30:16,319 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:17,321 tenable_jira.jira.Jira INFO UPDATED VULN-38 [prod-phi-use1-nessus-scanner 10.22.8.86/8834/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:18,839 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:19,973 tenable_jira.jira.Jira INFO UPDATED VULN-39 [ax-prod-nomad-node-2.use1.prod.chealth.io 10.21.10.21/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:21,045 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:22,146 tenable_jira.jira.Jira INFO UPDATED VULN-31 [ax-prod-nomad-server-0.use1.prod.chealth.io 10.21.8.109/8200/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:23,257 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:24,248 tenable_jira.jira.Jira INFO UPDATED VULN-57 [ax-prod-nomad-node-3.use1.prod.chealth.io 10.21.11.8/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:25,380 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:26,290 tenable_jira.jira.Jira INFO UPDATED VULN-47 [access-vpn-2 10.20.0.86/443/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:27,374 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:28,464 tenable_jira.jira.Jira INFO UPDATED VULN-56 [ops-nessus-scanner 10.20.0.52/8834/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:29,505 tenable_jira.jira.Jira INFO UPDATED VULN-2 [169726] Ubuntu 20.04 LTS / 22.04 LTS : Linux kernel vulnerabilities (USN-5792-2)
+2023-02-16 15:30:30,536 tenable_jira.jira.Jira INFO UPDATED VULN-29 [prod-euw1-nessus-scanner 10.0.4.99/0/TCP] [169726] Ubuntu 20.04 LTS / 22.04 LTS : Linux kernel vulnerabilities (USN-5792-2)
+2023-02-16 15:30:31,876 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:32,996 tenable_jira.jira.Jira INFO UPDATED VULN-24 [ax-prod-nomad-server-3.use1.prod.chealth.io 10.21.11.15/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:34,112 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:34,982 tenable_jira.jira.Jira INFO UPDATED VULN-25 [nessus-scanner-prod-use1 10.21.8.123/8834/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:36,158 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:37,372 tenable_jira.jira.Jira INFO UPDATED VULN-30 [ax-prod-nomad-server-4.use1.prod.chealth.io 10.21.13.145/8200/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:38,547 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:39,406 tenable_jira.jira.Jira INFO UPDATED VULN-28 [ax-prod-nomad-server-1.use1.prod.chealth.io 10.21.9.96/8200/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:40,600 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:41,574 tenable_jira.jira.Jira INFO UPDATED VULN-37 [ax-prod-nomad-node-4.use1.prod.chealth.io 10.21.13.183/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:42,666 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:43,590 tenable_jira.jira.Jira INFO UPDATED VULN-50 [ax-prod-nomad-server-2.use1.prod.chealth.io 10.21.10.169/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:44,745 tenable_jira.jira.Jira INFO UPDATED VULN-9 [57582] SSL Self-Signed Certificate
+2023-02-16 15:30:45,715 tenable_jira.jira.Jira INFO UPDATED VULN-10 [access-vpn-1 10.20.0.42/443/TCP] [57582] SSL Self-Signed Certificate
+2023-02-16 15:30:46,870 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:47,784 tenable_jira.jira.Jira INFO UPDATED VULN-11 [access-vpn-3 10.20.0.181/443/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:48,287 tenable_jira.transform.Tio2Jira INFO Autoclosing 111351 on 903fc828-3e40-4988-86eb-f024b0cc774a as it's an accepted issue
+2023-02-16 15:30:49,099 tenable_jira.transform.Tio2Jira INFO Autoclosing 57582 on 2432d098-381e-4bb2-b43f-b53519aed3ba as it's an accepted issue
+2023-02-16 15:30:50,609 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:51,643 tenable_jira.jira.Jira INFO UPDATED VULN-21 [prod-euw1-nessus-scanner 10.0.4.99/8834/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:52,238 tenable_jira.transform.Tio2Jira INFO Autoclosing 111351 on dd34165d-7d16-4cca-9106-620f0c32f8b1 as it's an accepted issue
+2023-02-16 15:30:53,675 tenable_jira.jira.Jira INFO UPDATED VULN-1 [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:54,556 tenable_jira.jira.Jira INFO UPDATED VULN-34 [ax-prod-nomad-node-8.use1.prod.chealth.io 10.21.11.67/53/UDP] [12217] DNS Server Cache Snooping Remote Information Disclosure
+2023-02-16 15:30:55,643 tenable_jira.jira.Jira INFO UPDATED VULN-4 [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:56,541 tenable_jira.jira.Jira INFO UPDATED VULN-58 [None 10.18.8.198/8834/TCP] [51192] SSL Certificate Cannot Be Trusted
+2023-02-16 15:30:57,210 tenable_jira.transform.Tio2Jira INFO Closing Issues Marked as Fixed.
+2023-02-16 15:33:07,758 tenable_jira.transform.Tio2Jira INFO Discovered terminated or deleted assets. Attempting to clean up orphaned issues.
