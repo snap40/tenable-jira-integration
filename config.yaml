@@ -1,0 +1,114 @@
+tenable:
+  # Tenable.io or API Key - Tenable DevOps User
+  access_key: env.TENABLE_API_ACCESS_KEY
+  secret_key: env.TENABLE_API_SECRET_KEY
+  severity_prioritization:
+    critical: 1
+    high: 2
+    medium: 3
+    low: 4
+  tio_severities:
+    - critical
+    - high
+    - medium
+    - low
+  tio_asset_attr_cache:
+    - agent_uuid`
+    - bios_uuid
+    - aws_ec2_instance_id
+    - aws_ec2_name
+    - aws_owner_id
+    - aws_vpc_id
+    - aws_region
+
+jira:
+  api_token: env.TENABLE_JIRA_API_TOKEN
+  api_username: tenable@currenthealth.com
+  address: snap40.atlassian.net
+
+project:
+  # The lead account id for the primary user for the project - Tenable Jira User.
+  leadAccountId: 63ecaca55fa5d13d1e115934
+  key: VULN
+  name: "Tenable Vulnerability Management"
+
+log:
+  # What is the logging level desired?  Available levels are:
+  #   debug, info, warn, error
+  # The default level if unspecified is "warn"
+  level: warn
+  # If you would like the log output to goto a file instead of standard output,
+  # then specify the filename here:
+  filename: ./tenable-jira.log
+
+screen:
+  jira_ids:
+    - 10672
+    - 10673
+  tabs:
+    Asset:
+      - Tenable Asset UUID
+      - Tenable Asset Tags
+      - Tenable Platform
+      - Device Hostname
+      - Device NetBIOS Name
+      - Device DNS Name
+      - Device IPv4 Addresses
+      - Device IPv6 Addresses
+      - Device MAC Addresses
+      - Device Network ID
+      - Vulnerability Repository ID
+      - Vulnerability Repository Name
+      - System Type
+      - AWS Owner ID
+      - AWS VPC ID
+      - AWS Region
+      - AWS Instance ID
+      - AWS Name
+      - Network Tag
+
+custom_fields:
+  - issue_type:
+      - Sub-task
+    jira_field: AWS Owner ID
+    searcher: labelsearcher
+    tio_field: asset.aws_owner_id
+    type: labels
+  - issue_type:
+      - Sub-task
+    jira_field: AWS VPC ID
+    searcher: labelsearcher
+    tio_field: asset.aws_vpc_id
+    type: labels
+  - issue_type:
+      - Sub-task
+    jira_field: AWS Region
+    searcher: labelsearcher
+    tio_field: asset.aws_region
+    type: labels
+  - issue_type:
+      - Sub-task
+    jira_field: AWS Instance ID
+    searcher: labelsearcher
+    tio_field: asset.aws_ec2_instance_id
+    type: labels
+  - issue_type:
+      - Sub-task
+    jira_field: AWS Name
+    searcher: labelsearcher
+    tio_field: asset.aws_ec2_name
+    type: labels
+
+#JIRA Ticket Subtask Name format
+issue_default_fields:
+  summary:
+    Sub-task:
+      tio_field: '[{vuln[asset.aws_ec2_name]} {vuln[asset.hostname]}/{vuln[port.port]}/{vuln[port.protocol]}] [{vuln[plugin.id]}] {vuln[plugin.name]}'
+
+# The following section is optional.  You should only specify this section if
+# you would like the bridge to run as a service with it's own timer.
+# service:
+  # How many hours should we wait between jobs?  Note setting this to a
+  # non-zero number will result in imports past the initial import will use
+  # time of the last completed import as the basis for last observed.
+  # interval: 24
