@@ -16,9 +16,9 @@ pipeline {
     agent {
         label 'linux && docker' 
     }
-    env.TENABLE_API_ACCESS_KEY = ''
-    env.TENABLE_API_SECRET_KEY = ''
-    env.TENABLE_JIRA_API_TOKEN = ''
+    // env.TENABLE_API_ACCESS_KEY = ''
+    // env.TENABLE_API_SECRET_KEY = ''
+    // env.TENABLE_JIRA_API_TOKEN = ''
 
     stages {
         stage('Install plugin') {
