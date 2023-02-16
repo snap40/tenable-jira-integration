@@ -30,21 +30,20 @@ pipeline {
         stage('Get Tenable Vulnerabilities') {
             steps {
                 script {
-                    try {
-
                         sh """  
                             export PATH="$HOME/.local/bin:$PATH"
                             pip3 install .
                             tenable-jiraa config.yaml
                         """
-
-                    }
-                    catch(error) {
-                        throw error
-                        slackSend(channel: '#sre', color: 'danger', message: "Build of 'tenable-jira-integration' failed. \n Link: $BUILD_URL")
-                    }
                 }
             }
         }
+    }
+    post{
+        failure{
+            script{
+                    slackSend(channel: '#sre', color: 'danger', message: "Build of 'tenable-jira-integration' failed. \n Link: $BUILD_URL")
+            }
+        }   
     }
 }
