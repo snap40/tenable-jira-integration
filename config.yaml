@@ -68,6 +68,13 @@ screen:
 
 custom_fields:
   - issue_type:
+    - Task
+    jira_field: Epic Link
+    jira_id: customfield_10011
+    searcher: textsearcher
+    static_value: https://snap40.atlassian.net/browse/SW-467
+    type: string
+  - issue_type:
       - Sub-task
     jira_field: AWS Owner ID
     searcher: labelsearcher
