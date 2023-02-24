@@ -66,14 +66,15 @@ screen:
       - AWS Name
       - Network Tag
 
-custom_fields:
+fields:
   - issue_type:
       - Task
-    jira_field: Epic Name
-    jira_id: customfield_10011
+    jira_field: Epic Link
+    jira_id: customfield_10008
     searcher: textsearcher
     static_value: SRE - Team BAU
     type: string
+custom_fields:
   - issue_type:
       - Sub-task
     jira_field: AWS Owner ID
