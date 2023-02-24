@@ -33,17 +33,17 @@ pipeline {
                         sh """  
                             export PATH="$HOME/.local/bin:$PATH"
                             pip3 install .
-                            tenable-jira config.yaml --troubleshoot
+                            tenable-jira config.yaml
                         """
                 }
             }
         }
     }
-    // post{
-    //     failure{
-    //         script{
-    //                 slackSend(channel: '#sre', color: 'danger', message: "Build of 'tenable-jira-integration' failed. \n Link: $BUILD_URL")
-    //         }
-    //     }   
-    // }
+    post{
+        failure{
+            script{
+                    slackSend(channel: '#sre', color: 'danger', message: "Build of 'tenable-jira-integration' failed. \n Link: $BUILD_URL")
+            }
+        }   
+    }
 }
