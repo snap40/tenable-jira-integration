@@ -74,6 +74,7 @@ fields:
     searcher: textsearcher
     static_value: SRE - Team BAU
     type: string
+    
 custom_fields:
   - issue_type:
       - Sub-task
