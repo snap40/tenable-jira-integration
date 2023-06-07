@@ -67,6 +67,18 @@ screen:
       - Network Tag
 
 custom_fields:
+  - name: Task
+    type: standard
+    search:
+      - Tenable Plugin ID
+  - name: Sub-task
+    type: subtask
+    search:
+      - Tenable Platform
+      - Tenable Plugin ID
+      - Tenable Asset UUID
+      - Vulnerability Port
+      - Vulnerability Protocol
   - issue_type:
       - Sub-task
     jira_field: AWS Owner ID
