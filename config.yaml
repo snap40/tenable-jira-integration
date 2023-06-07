@@ -12,6 +12,7 @@ tenable:
     - high
     - medium
     - low
+  tio_age: 30
   tio_asset_attr_cache:
     - agent_uuid`
     - bios_uuid
@@ -117,6 +118,11 @@ issue_default_fields:
   summary:
     Sub-task:
       tio_field: '[{vuln[asset.aws_ec2_name]} {vuln[asset.hostname]}/{vuln[port.port]}/{vuln[port.protocol]}] [{vuln[plugin.id]}] {vuln[plugin.name]}'
+
+closed_transitions:
+  - Closed
+  - Done
+  - Resolved
 
 # The following section is optional.  You should only specify this section if
 # you would like the bridge to run as a service with it's own timer.
