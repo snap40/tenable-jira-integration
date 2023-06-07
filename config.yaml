@@ -66,6 +66,20 @@ screen:
       - AWS Name
       - Network Tag
 
+issue_types:
+  - name: Task
+    type: standard
+    search:
+      - Tenable Plugin ID
+  - name: Sub-task
+    type: subtask
+    search:
+      - Tenable Platform
+      - Tenable Plugin ID
+      - Tenable Asset UUID
+      - Vulnerability Port
+      - Vulnerability Protocol
+
 custom_fields:
   - name: Task
     type: standard
