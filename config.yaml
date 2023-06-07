@@ -12,7 +12,6 @@ tenable:
     - high
     - medium
     - low
-  tio_age: 30
   tio_asset_attr_cache:
     - agent_uuid`
     - bios_uuid
