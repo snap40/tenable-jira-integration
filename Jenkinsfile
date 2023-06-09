@@ -39,11 +39,11 @@ pipeline {
             }
         }
     }
-    // post{
-    //     failure{
-    //         script{
-    //                 slackSend(channel: '#sre', color: 'danger', message: "Build of 'tenable-jira-integration' failed. \n Link: $BUILD_URL")
-    //         }
-    //     }   
-    // }
+    post{
+        failure{
+            script{
+                    slackSend(channel: '#sre', color: 'danger', message: "Build of 'tenable-jira-integration' failed. \n Link: $BUILD_URL")
+            }
+        }   
+    }
 }
